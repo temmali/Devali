@@ -31,7 +31,7 @@ sudo service redis-server start
 sudo apt-get update -y
 sudo apt-get install g++-4.7 -y c++-4.7
 sudo apt-get install luarocks -y
-wget http://luarocks.org/releases/luarocks-2.2.2.tar.gz;tar zxpf luarocks-2.2.2.tar.gz;cd luarocks-2.2.2 && ./configure && make && sudo make install
+wget http://luarocks.org/releases/luarocks-2.2.2.tar.gz;tar zxpf luarocks-2.2.2.tar.gz;cd luarocks-2.2.2 && ./configure
 sudo luarocks install luasocket
 sudo luarocks install luasec
 sudo luarocks install redis-lua
