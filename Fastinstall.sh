@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-cd $HOME/Dali
+cd $HOME/Devali
 rm -rf $HOME/.telegram-cli
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x Dali
+chmod +x Devali
 chmod +x tali
 ./tali
 }
