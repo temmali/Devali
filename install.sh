@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd Dali
+cd Devali
 rm -rf luarocks*
 lua start.lua
 
