@@ -70,7 +70,7 @@ RunDali:write([[
 #!/usr/bin/env bash
 cd $HOME/Devali
 token="]]..database:get(Server_Dali.."Token_Dali")..[["
-rm -fr Dali.lua
+rm -fr Devali.lua
 wget "https://raw.githubusercontent.com/temmali/Devali/main/Devali.lua"
 while(true) do
 rm -fr ../.telegram-cli
@@ -81,7 +81,7 @@ RunDali:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/Dali
+cd $HOME/Devali
 while(true) do
 rm -fr ../.telegram-cli
 screen -S Devali -X kill
