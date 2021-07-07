@@ -9592,7 +9592,7 @@ if text == "تحديث السورس ◟" then
 send(msg.chat_id_,msg.id_,'◟︙تم التحديث')
 os.execute('rm -rf Dali.lua')
 os.execute('rm -rf start.lua')
-os.execute('wget https://raw.githubusercontent.com/temmali/Devali/main/Dali.lua')
+os.execute('wget https://raw.githubusercontent.com/temmali/Devali/main/Devali.lua')
 os.execute('wget https://raw.githubusercontent.com/temmali/Devali/main/start.lua')
 dofile('Dali.lua')  
 return false
