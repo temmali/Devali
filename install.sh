@@ -3,14 +3,14 @@ cd $HOME/Dali
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x Dali
+chmod +x Devali
 chmod +x tali
 ./tali
 }
 get() {
-rm -fr Dali.lua
+rm -fr Devali.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/temmali/Devali/main/Dali.lua"
+wget "https://raw.githubusercontent.com/temmali/Devali/main/Devali.lua"
 lua start.lua
 }
 installall(){
